@@ -1,11 +1,10 @@
-def hello():
-    print("Hello, Git!")
-    print("This is my first Git project!")
+from calculator import Calculator
 
-def calculate(a, b):
-    return a + b
+def main():
+    calc = Calculator()
+    print("Calculator Demo:")
+    print(f"5 + 3 = {calc.add(5, 3)}")
+    print(f"10 - 4 = {calc.subtract(10, 4)}")
     
 if __name__ == "__main__":
-    hello()
-    result = calculate(5, 3)
-    print(f"5 + 3 = {result}")
+    main()
